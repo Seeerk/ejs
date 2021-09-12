@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+
+body {
+	overflow: hidden;
+}
+
+main {
+	margin: 5vh auto;
+	background-color: black;
+	width: 45vh;
+	height: 90vh;
+}
+
+.screen {
+	overflow: auto;
+	background-color: white;
+	width: 45vh;
+	height: 90vh;
+	border: 1px solid;
+}
+
+.statusBar {
+	height: 44px;
+	background-color: gainsboro;
+}
+
+.appName {
+	margin: 0 16px;
+	font-size: 36pt;
+	font-weight: 400;
+}
+
+.authInput {
+	border: none;
+	margin: 8px 16px;
+	width: calc(100% - 32px);
+	font-size: 24pt;
+}
+
+.authButton {
+	background: none;
+	border: none;
+	margin: 8px 16px;
+	width: calc(100% - 32px);
+	font-size: 24pt;
+	text-align: center;
+}
+
+.cellMessage {
+	display: flex;
+	width: calc(100% - 32px);
+	height: 80px;
+	background-color: ghostwhite;
+	border-radius: 16px;
+	margin: 16px auto;
+	transition: transform .2s;
+}
+
+.cellMessage:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.avatar {
+	background-color: white;
+	display: block;
+	/*flex-direction: row;*/
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	margin: 8px 8px 8px 16px;
+}
+
+.messageText {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 64px);
+	margin: 8px 16px 8px 8px ;
+}
+
+.userName {
+	margin: 0 0 2px;
+	font-size: 16pt;
+	font-weight: 600;
+}
+
+.textMessage {
+	margin: 2px 0 0;
+
+}
+
